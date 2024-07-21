@@ -1,0 +1,12 @@
+plugins:
+  pod-watcher:
+    shortCut: Shift-W
+    description: "Watch a pod in the background and notify on status change"
+    scopes:
+      - pods
+    command: <PATH TO k8-pod-watch bin>
+    background: true
+    confirm: false
+    args:
+      - -p
+      - $NAME
